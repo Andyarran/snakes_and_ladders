@@ -14,8 +14,8 @@ while true
   #   break
   # else 
   @game1 = Game.new(user1, user2)
+  puts "Welcome #{user1} and #{user2}, are you ready to play?\n"
   while true
-    puts "Welcome #{user1} and #{user2}, are you ready to play?\n"
     puts "#{user1} if you're ready to start input roll\n"
     input = gets.chomp
      if input.downcase == "roll"

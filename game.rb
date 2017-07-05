@@ -10,12 +10,12 @@ attr_accessor :player1, :player2
   end
 
 
-  def roll(player)
-    your_roll = @die.roll 
+  def roll(player) 
     
 
     if player == @player1[0] 
       player_roll_start_position = @player1[1]
+      your_roll = @die.roll
       @player1[1] += your_roll
       if @player1[1] > 100
         puts "You are on #{player_roll_start_position} you need to roll #{100 -player_roll_start_position} to win"
@@ -25,6 +25,7 @@ attr_accessor :player1, :player2
       end
     elsif player == @player2[0]
       player_roll_start_position = @player2[1]
+      your_roll = @die.roll
       @player2[1] += your_roll
       if @player2[1] > 100
         puts "You are on #{player_roll_start_position} you need to roll #{100 -player_roll_start_position} to win"
