@@ -12,14 +12,14 @@ class BoardTest < MiniTest::Test
     assert_equal(100, @board1.tiles.count)
   end
 
-  # def test_start_point
-  #   assert_equal(0, @board1.player1[1])
-  #   assert_equal("Guy", @board1.player1[0])
-  # end
+  def test_start_point
+    assert_equal(0, @board1.player1[1])
+    assert_equal("Guy", @board1.player1[0])
+  end
 
-  # def test_roll
-  #   result = @board1.roll("Guy")
-  #   assert_equal(4, @board1.player1[1])
-  # end
+  def test_roll
+    result = @board1.roll("Guy")
+    assert_equal(4, @board1.player1[1])
+  end
 
 end
